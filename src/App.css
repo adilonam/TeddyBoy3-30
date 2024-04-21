@@ -1,0 +1,254 @@
+.main-div {
+  background-color: #131313;
+}
+
+.nav-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.navbar-brand,
+.logo {
+  font-family: 'Sukhumvit Set';
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.navbar-brand span:first-child,
+.logo span:first-child,
+.hero-head span:first-child {
+  color: #e6792b;
+  padding-right: 0.5rem;
+}
+.navbar-brand span:nth-child(2),
+.logo span:nth-child(2),
+.hero-head span:nth-child(2),
+.about-head span:nth-child(2) {
+  /* color: rgb(245 139 104); */
+  color: #e6792b;
+}
+
+.hero-section {
+  background: url('img/hero-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-container {
+  background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+  padding: 10rem 0 4rem 0;
+}
+
+.mint-section {
+  background: transparent;
+  padding-bottom: 4rem;
+}
+
+.hero-container .hero-head {
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-container .hero-head span {
+  font-family: 'toppan-bunkyu-midashi-go-std, sans-serif';
+  font-size: 4rem;
+}
+
+.mint-title {
+  color: #ffffff;
+  font-family: 'Sukhumvit Set';
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.mint-info {
+  font-family: 'Sukhumvit Set';
+  color: rgb(245 139 104);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.mint-subinfo {
+  font-family: 'Sukhumvit Set';
+  color: #b1b1b1;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.main-mint button {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.custom-input {
+  flex-grow: 1;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 0;
+  font-family: 'Sukhumvit Set';
+  background-color: #b1b1b170;
+  padding: 0.5rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  margin: 0 1.5rem;
+}
+
+.wallet-err {
+  text-align: center;
+  color: #b1b1b1;
+}
+
+.custom-input:focus {
+  outline: none;
+}
+
+.custom-input::-webkit-inner-spin-button,
+.custom-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hero-container .hero-head div {
+  display: inline;
+  font-family: 'toppan-bunkyu-midashi-go-std, sans-serif';
+  font-weight: 600;
+}
+
+.gif-container {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.gif-container .inner-img {
+  width: 78%;
+  position: absolute;
+  top: 11%;
+  left: 11%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.custom-btn {
+  background-color: rgb(245 139 104);
+  color: #ffffff;
+  font-size: 1.14rem;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 8px 8px 0px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 8px 8px 0px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 8px 8px 0px rgba(255, 255, 255, 0.2);
+}
+
+.mint-section .custom-btn {
+  width: 140px;
+  font-size: 1.5rem;
+}
+
+.custom-btn:hover {
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.custom-btn:focus {
+  outline: none;
+  box-shadow: 6px 6px 0px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 6px 6px 0px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 6px 6px 0px rgba(255, 255, 255, 0.2);
+}
+
+.about-section {
+  background: url('img/about-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.about-container {
+  font-family: 'Sukhumvit Set';
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 19, 0.75) 0%,
+    #23182f 121.84%
+  );
+  padding: 5rem 0;
+}
+
+.about-container p {
+  color: #b1b1b1;
+  line-height: 1.8rem;
+}
+
+.about-head {
+  padding-bottom: 4rem;
+}
+
+.hero-head {
+  line-height: 4rem;
+}
+
+.about-head span,
+.hero-head > div {
+  padding: 1rem 0.5rem;
+  border-bottom: 2px dashed #8a8a8a;
+}
+
+.social-link:hover {
+  opacity: 0.75;
+}
+
+footer {
+  padding: 0.75rem 0 0.5rem 0;
+  background-color: rgb(39 0 79);
+}
+
+/* slider */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-14rem * 6));
+  }
+}
+.slider {
+  padding: 2rem 0;
+  background: #131313;
+  overflow: hidden;
+  position: relative;
+}
+.slider-wrap {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: calc(14rem * 50);
+  /* height: 100%; */
+}
+.slide-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.slide {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #454545;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  width: 14rem;
+  text-align: center;
+  height: fit-content;
+}
+
+@media screen and (max-width: 470px) {
+  .navbar .custom-btn {
+    padding: 8px 20px;
+  }
+}
